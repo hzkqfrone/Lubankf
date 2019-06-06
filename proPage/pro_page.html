@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>快洽客服</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/propage.css">
+</head>
+<body>
+    <header>
+        <div class="head_wrap">
+            <div class="logo">
+                <img src="./image/logo.png" alt="快洽客服">
+            </div>
+            <div class="head_right">
+                <a href="#form" class="join_btn">
+                    <i></i>
+                    <span>立即加入</span>    
+                </a>
+                <a href="./pro_query.html" class="my_money">
+                    <i></i>
+                    <span>我的佣金</span>    
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="banner"></div>
+    <div class="step_wrap">
+        <div class="center">
+            <div class="step_info">
+                <div class="add_info">
+                    <img src="./image/icon_info.png">
+                </div>
+                <div class="step">
+                    <h2 class="title">如何快速加入?</h2>
+                    <h4>第一步: 填写申请表单</h4>
+                    <p>将您的联系方式与您推荐用户的联系方式提交我们。</p>
+                    <h4>第二步：初步商务沟通</h4>
+                    <p>我们的商务人员会与您初步沟通，了解介绍用户的需求，提高成单几率。。</p>
+                    <h4>第三步：获得佣金奖励</h4>
+                    <p>您介绍的用户如果成功购买我们的系统，我们将给予您一定的成单比例的佣金奖励。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="application_form" id="form">
+        <div class="form_wrap center">
+            <h2 class="title">快速填写申请表单</h2>
+            <div class="form">
+                <h3>推荐快洽客服系统，赚取高额佣金</h3>
+                <ul>
+                    <li class="clearfix">
+                        <span>您的姓名: </span>
+                        <input type="text" class="form_val i_username" placeholder="请填写您的真实姓名">
+                        <i>*</i>
+                        <div class="error">请填写您的姓名</div>
+                    </li>
+                    <li class="clearfix">
+                        <span>您的手机号: </span>
+                        <input type="text" class="form_val i_phone" placeholder="请填写您的真实手机号码">
+                        <i>*</i>
+                        <div class="error">请填写您的手机号码</div>
+                        <div class="verify_error verify_tel_error"></div>
+                    </li>
+                    <li class="clearfix">
+                        <span>您的邮箱号: </span>
+                        <input type="text" class="form_val i_email" placeholder="请填写您的真实邮箱号">
+                        <i>*</i>
+                        <div class="error">请填写您的邮箱</div>
+                        <div class="verify_error verify_email_error"></div>
+                    </li>
+                    <li class="clearfix">
+                        <span>查询密码: </span>
+                        <input type="text" class="form_val password_hash" placeholder="用于您查询您推荐的用户跟进进度,以及是否成交">
+                        <i>*</i>
+                        <div class="error">请填写您的查询密码</div>
+                    </li>
+                    <li class="clearfix">
+                        <span>被推荐人姓名: </span>
+                        <input type="text" class="form_val r_username" placeholder="请填写您推荐的联系人姓名">
+                        <i>*</i>
+                        <div class="error">请填写您推荐的联系人姓名</div>
+                    </li>
+                    <li class="clearfix">
+                        <span>被推荐人电话: </span>
+                        <input type="text" class="form_val r_phone" placeholder="请填写您推荐的联系人电话">
+                        <i>*</i>
+                        <div class="error">请填写您推荐的联系人电话</div>
+                        <div class="verify_error verify_rtel_error"></div>
+                    </li>
+                    <li class="clearfix demand">
+                        <span>请告知您和联系人的关系,以及对方需求: </span>
+                        <textarea class="form_val remarks"></textarea>
+                        <i>*</i>
+                        <div class="error">请填写您和联系人的关系，以及对方需求</div>
+                    </li>
+                </ul>
+                <div class="wrong">
+                    <div class="error_icon"></div>
+                    <p></p>   
+                </div>
+                <a href="javascript:;" class="submit" id="submitBtn">立即提交</a>
+            </div>
+        </div>
+        <div class="success_box">
+            <div class="success_icon"></div>
+            <div class="success_content"> 提交成功, 我们的商务人员会在1-2个工作日内与您联系</div>
+        </div>
+        <div class="mark"></div>
+    </div>
+    <!-- 常见问题 -->
+    <div class="issue">
+        <div class="center">
+            <h2 class="title">常见问题</h2>
+            <ul>
+                <li>
+                    <p class="title">佣金奖励的比例有多高？</p>
+                    <p class="content">佣金比例取决于用户购买的产品类型，以及成交金额，我们的商务人员可以与您沟通此问题。</p>
+                </li>
+                <li>
+                    <p class="title">如何查询我推荐用户的销售进度？</p>
+                    <p class="content">我们每周1更新新的跟进进度，您可以通过下方的链接查询您的推荐进度：点击这里</p>
+                </li>
+                <li>
+                    <p class="title">如何收取我的佣金？</p>
+                    <p class="content">在成单后，我们的商务人员会与您沟通合适您的支付方式。</p>
+                </li>
+            </ul> 
+            <h4>快洽企业客服专家，超过10000家企业的选择</h4>
+            <ul class="company">
+                <li class="bottom right"><img src="./image/company_01.png"></li>
+                <li class="bottom right"><img src="./image/company_02.png"></li>
+                <li class="bottom right"><img src="./image/company_03.png"></li>
+                <li class="bottom right"><img src="./image/company_04.png"></li>
+                <li class="bottom"><img src="./image/company_05.png"></li>
+                <li class="right"><img src="./image/company_06.png"></li>
+                <li class="right"><img src="./image/company_07.png"></li>
+                <li class="right"><img src="./image/company_08.png"></li>
+                <li class="right"><img src="./image/company_09.png"></li>
+                <li><img src="./image/company_10.png"></li>
+            </ul>
+        </div>  
+    </div>
+    <div class="footer">
+        <div class="center">
+            <h4>有问题 ？欢迎联系我们</h4>
+            <p class="introduce">快洽客服全渠道客服系统提供1对1的客户服务，为企业提供全方位的客服解决方案。</p>
+            <ul>
+                <li>
+                    <img src="./image/wechat.png" alt="公众号">
+                    <p class="title">公众号</p>
+                    <p class="info">快洽客服</p>
+                </li>
+                <li>
+                    <img src="./image/site.png" alt="地址">
+                    <p class="title">地址</p>
+                    <p class="info">北京通州新华大街北京ONE国际大厦23层</p>
+                </li>
+                <li>
+                    <img src="./image/tel.png" alt="电话">
+                    <p class="title">电话</p>
+                    <p class="info">010-57433574</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="./js/jquery.1.8.3.js"></script>
+    <script src="./js/propage.js"></script>
+</body>
+</html>

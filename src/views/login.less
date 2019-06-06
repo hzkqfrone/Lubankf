@@ -1,0 +1,157 @@
+.login{
+    width: 100%;
+    // height: 100%;
+    // min-width:1000px;
+    overflow: hidden;
+    background: #e7f3fc url(../images/login_bg.png) no-repeat center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    height:100%;
+    overflow-y:auto;
+    .logo{
+        width:100%;
+        height:92px;
+        background:#fff;
+        .logoWrap{
+            width:1200px;
+            margin:0 auto;
+            height:92px;
+            img{
+                display:inline-block;
+                border-right:1px solid #ebebeb;
+                padding:20px;
+                vertical-align:middle;
+            }
+            h2{
+                display:inline-block;
+                line-height:92px;
+                font-size:20px;
+                margin-left:20px;
+            }
+        }
+    }
+    &-wrap{
+        display: block;
+        .explain{
+            width:62%;
+            float: left;
+            margin-top:10%;
+        }
+        .ivu-card-bordered,.ivu-steps .ivu-steps-head,.ivu-steps .ivu-steps-title,{
+            background:rgba(0, 0, 0, 0);
+            border:none;
+        }
+        .ivu-steps-item.ivu-steps-status-process .ivu-steps-head-inner{
+            background:rgba(0, 0, 0, 0);
+        }
+        .ivu-steps .ivu-steps-main .ivu-steps-title{
+            color:#fff;
+        }
+        .ivu-steps-vertical .ivu-steps-main .ivu-steps-content{
+            color:#fff;
+            font-size:14px;
+        }
+    }
+    &-con{
+        // max-width:40%;
+        width: 520px;
+        padding: 0 40px;
+        margin: 60px auto 0;
+        .ivu-card-body{
+            padding:16px 40px;
+        }
+        &-header{
+            font-size: 16px;
+            font-weight: 300;
+            text-align: center;
+            padding: 30px 0;
+        }
+        .form-con{
+            padding: 10px 0 0;
+            .forgetPassword{
+                text-align:right;
+                font-size:12px;
+                margin-bottom:10px;
+            }
+        }
+        .login-tip{
+            font-size: 10px;
+            color: #c3c3c3;
+            line-height:30px;
+            .wxLogin{
+                cursor: pointer;
+                display:inline-block;
+                padding-left:35px;
+                height:30px;
+                background:url(../images/wechatLogin.png) no-repeat left;
+                vertical-align:middle;
+            }
+            .register{
+                float:right;
+            }
+        }
+        .registerBtn{
+            text-align: center;
+            button{
+                width:100px;
+                margin:0 10px;
+            }
+        }
+    }
+    .ivu-input-group-append, .ivu-input-group-prepend{
+        padding:4px 16px;
+    }
+    .ivu-input-group>.ivu-input:last-child{
+        height: 40px;
+    }
+    .ivu-btn-primary{
+        line-height: 24px;
+    }
+    .clearfix:after {
+        content: " ";
+        display: block;;
+        line-height: 0;
+        height: 0;
+        visibility: hidden;
+        clear: both;
+    }
+}
+
+.registerWrap{
+    width:524px;
+    margin:0 auto;
+    background:#fff;
+    padding:40px;
+    margin-top:60px;
+    .ivu-steps-horizontal{
+        margin:0 0 10px 65px;
+    }
+    .ivu-input{
+        height:56px;
+        font-size:16px;
+    }
+    .code{
+        position: relative;
+        .getCode{
+            border:none;
+            width:110px;
+            height:40px;
+            position: absolute;
+            right:10px;
+            top:8px;
+            cursor: pointer;
+        }
+    }
+    .goLogin{
+        text-align: right;
+        margin-top:20px;
+    }
+}
+.copyright {
+    color:#5d5d5d;
+    display:block;
+    width:100%;
+    text-align:center;
+    margin:50px 0;
+}

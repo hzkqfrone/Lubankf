@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>数据统计</title>
+    <link rel="stylesheet" href="./css/report.css">
+</head>
+<body>
+    <div class="header">
+        <header>
+            <div class="head_img_wrap">
+                <div class="head_img">
+                    <img src="./image/logo.png">
+                </div>
+                <h3>数据统计</h3>
+            </div>
+            <div class="right_filtrate"></div>
+        </header>
+        <nav>
+            <ul class="nav_tab">
+                <li class="tab_item"><a href="javascript:;" class="current">会话</a></li>
+                <li class="tab_item"><a href="javascript:;">访客</a></li>
+                <li class="tab_item"><a href="javascript:;">客服评价</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- 会话 -->
+    <div class="report_wrap task_report">
+        <div class="report_date task_report_date">报表日期: <span>今天</span></div>
+        <ul class="chat_report">
+            <li class='task'>
+                <div class='title'>总对话数</div>
+                <p class="task_report_item_1">-</p>
+            </li>
+            <li class='task'>
+                <div class='title'>接入平均时间</div>
+                <p class="task_report_item_2">-</p>
+            </li>
+            <li class='task'>
+                <div class='title'>聊天平均时间</div>
+                <p class="task_report_item_3">-</p>
+            </li>
+        </ul>
+        <div class='task_tendency'>
+            <div class='handle'>
+                <span class='title'>会话趋势</span>
+                <div class='task_date_tab'>
+                    <span class="task_qs_item" data-type='hour'>小时</span>
+                    <span class="task_qs_item current_task_date" data-type='day'>天</span>
+                    <span class="task_qs_item" data-type='month'>月</span>
+                </div>
+            </div>
+            <div class="charts_container">
+                <div id="task_container" style="height: 250px;width: 100%;"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 访客 -->
+    <div class="report_wrap visitor_report" style="display:none;">
+        <div class="report_date visitor_report_date">报表日期: <span>今天</span></div>
+        <ul class="chat_report">
+            <li class='task'>
+                <div class='title'>总访客</div>
+                <p class="visitor_report_item_1">-</p>
+            </li>
+            <li class='task'>
+                <div class='title'>有效访客</div>
+                <p class="visitor_report_item_2">-</p>
+            </li>
+            <li class='task'>
+                <div class='title'>总浏览量</div>
+                <p class="visitor_report_item_3">-</p>
+            </li>
+        </ul>
+        <div class='task_tendency'>
+            <div class='handle'>
+                <span class='title'>访客统计</span>
+            </div>
+            <div class="charts_container">
+                <div id="charts_container" style="height: 250px;width: 100%;"></div>
+            </div>
+        </div>
+    </div>
+    <div id="mask"></div>
+    <div id="loading"></div>
+
+    <div class="filtrate">
+        <span class="arrows"></span>
+        <ul>
+            <li data-type='1'>今天</li>
+            <li data-type='2'>昨天</li>
+            <li data-type='3'>本周</li>
+            <li data-type='4'>自定义时间</li>
+        </ul>
+    </div>
+
+    <!-- 客服评价 -->
+    <!-- 访客 -->
+    <div class="report_wrap service_resource_wrap" style="display:none;">
+        <div class="report_date service_resource_date">报表日期: <span>今天</span></div>
+        <div class='service_resource'>
+            <span class='service_total_title'>客服资源</span>
+            <div class='service_status_total'>
+                
+            </div>
+        </div>
+        <div class="service_list_wrap">
+
+        </div>
+    </div>
+
+    <div id="mask"></div>
+    <div id="loading"></div>
+    
+    
+    <div class="filtrate">
+        <span class="arrows"></span>
+        <ul>
+            <li data-type='1'>今天</li>
+            <li data-type='2'>昨天</li>
+            <li data-type='3'>本周</li>
+            <li data-type='4'>自定义时间</li>
+        </ul>
+    </div>
+    <!-- 自定义时间 -->
+    <div class="user_defined">
+        <h4>自定义时间</h4>
+        <div class="date">
+            <input type="text" class="start_time" id="user_defined_start_time" value="开始时间"/>
+            <span class="to">-</span>
+            <input type="text" class="end_time" id="user_defined_end_time" value="结束时间"/>
+        </div>
+        <div class="hint">
+            <a href="javascript:;" class="cancel">取消</a>
+            <a href="javascript:;" class="sure">确定</a>
+        </div>
+    </div>
+
+    <script src="./js/jquery.1.8.3.js"></script>
+    <script src="./js/echarts.min.js"></script>
+    <script src="./js/macarons.js"></script>
+    <script src="./Mdate/iScroll.js"></script>
+    <script src="./Mdate/Mdate.js"></script>
+    <script src="./js/report.js"></script>
+</body>
+</html>

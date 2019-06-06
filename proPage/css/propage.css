@@ -1,0 +1,295 @@
+header{
+    width:100%;
+    height:90px;
+    background:#fff;
+    position: fixed;
+    top:0;
+    left: 0;
+}
+header .logo{
+    display: inline-block;
+    width:180px;
+    height:90px;
+}
+header .head_wrap{
+    width:1200px;
+    height:90px;
+    margin:0 auto;
+}
+header .head_right{
+    float:right;
+    margin:25px 0;
+}
+.head_right>a{
+    display: inline-block;
+    width:148px;
+    height:38px;
+    border:1px solid #fc9012;
+    line-height: 38px;
+    text-align: center;
+}
+.head_right>a>i{
+    display: inline-block;
+    width:18px;
+    height:18px;
+    background:url(../image/icon_add.png) center no-repeat;
+    vertical-align: middle;
+    margin-top:-3px;
+}
+.head_right>a.my_money>i{    
+    background: url(../image/icon_money.png) center no-repeat;
+}
+.head_right .join_btn{
+    color:#fc9012;
+    background:#fff;
+}
+.head_right .my_money{
+    color:#fff;
+    background:#fc9012;
+}
+.banner{
+    margin-top:90px;
+    width:100%;
+    height:450px;
+    background: url(../image/banner.png) no-repeat center;
+}
+.step_wrap{
+    width:100%;
+    height:380px;
+    padding:50px 0;
+    background:#fff;
+}
+.center{
+    width:1200px;
+    margin:0 auto;
+}
+.step_wrap .add_info{
+    float: left;
+}
+.step_wrap .step{
+    width:585px;
+    display: inline-block;
+    padding:30px;
+}
+.step_wrap h2{
+    padding-bottom: 25px;
+}
+h2.title{
+    font-size:50px;
+}
+.step_wrap .step h4{
+    font-size:16px;
+    padding-bottom:10px;
+}
+.step_wrap .step p{
+    font-size:14px;
+    color:#666666;
+    padding-bottom:35px;
+}
+.application_form{
+    width:100%;
+    min-height: 500px;
+    background:#f9f9f9;
+}
+.application_form .form{
+    margin:0 118px;
+    border:1px solid #d7d7d7;
+    border-top:2px solid #fc9012;
+    background:#fff;
+}
+.application_form h2{
+    text-align: center;
+    padding:50px 0 30px 0;
+}
+.application_form .form h3{
+    font-size:24px;
+    color:#fc9012;
+    line-height: 80px;
+    border-bottom:1px solid #d7d7d7;
+    text-align: center;
+    margin-bottom:30px;
+}
+.application_form .form ul{
+    border-bottom:1px solid #d7d7d7;
+}
+.application_form .form ul>li{
+    margin:0 100px;
+    height: 92px;
+}
+.application_form .form ul>li>span{
+    display: inline-block;
+    width:106px;
+    text-align: right;
+    line-height: 50px;
+}
+.application_form .form ul>li>input{
+    width:590px;
+    height:50px;
+    border:1px solid #efefef;
+    padding:0 15px;
+    margin-left:15px;
+}
+.application_form .form ul>li>i{
+    font-style: normal;
+    color:red;
+}
+.application_form .form ul>li.demand{
+    height:190px;
+}
+.application_form .form ul>li.demand>span{
+    width:100%;
+    text-align: left;
+}
+.application_form .demand>textarea{
+    height:70px;
+    width:590px;
+    padding:15px;
+    border:1px solid #efefef;
+    margin-left:124px;
+    resize:none;
+}
+.application_form .submit{
+    display: block;
+    width:620px;
+    height:50px;
+    background:#fc9012;
+    color:#fff;
+    margin:30px auto 40px auto;
+    text-align: center;
+    line-height: 50px;
+}
+.application_form .wrong{
+    text-align: center;
+    width:300px;
+    margin:0 auto;
+    border:2px solid red;
+    padding:10px;
+    margin-top:10px;
+    display:none;
+}
+.application_form .wrong .error_icon{
+    height:40px;
+    background:url(../image/error_icon.png) center no-repeat;
+    background-size: 32px;
+}
+.application_form .wrong>p{
+    color:red;
+}
+.issue{
+    width:100%;
+    background:#fff;
+}
+.issue .center>h2{
+    text-align: center;
+    margin:50px 0;
+}
+.issue ul, .footer ul{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.issue ul>li{
+    width:310px;
+}
+.issue ul>li>p.title{
+    font-weight: bold;
+    padding-bottom:26px;
+}
+.issue ul>li>p.content{
+    line-height: 24px;
+    color:#666666;
+    font-size:14px;
+}
+
+.issue ul.company>li{
+    width:239px;
+    height:196px;
+    opacity:0.5;
+}
+.issue ul.company>li>img{
+    margin:48px;
+}
+.issue h4{
+    font-size: 24px;
+    padding:100px 0 30px 0;
+    text-align: center;
+}
+.company .bottom{
+    border-bottom:1px solid #efefef;
+}
+.company .right{
+    border-right:1px solid #efefef;
+}
+.issue ul.company>li:hover{
+    transition : all .5s;
+    opacity: 1;
+}
+.footer{
+    width:100%;
+    height:465px;
+    padding-top:80px;
+    background:#2a2c37;
+}
+.footer h4{
+    font-size:24px;
+    color:#fff;
+    text-align: center;
+    padding-bottom:30px;
+}
+.footer .introduce{
+    font-size:14px;
+    color:#c3c3c3;
+    text-align: center;
+    margin-bottom:60px;
+}
+.footer ul>li{
+    width: 358px;
+    height:198px;
+    border:1px solid #c3c3c3;
+    border-radius: 5px;
+}
+.footer ul>li>p.title{
+    font-weight: bold;
+    color:#ffffff;
+    padding-bottom:20px;
+}
+.footer ul>li>p.info{
+    font-size:14px;
+    color:#c3c3c3;
+}
+.footer ul>li>img{
+    padding:35px 0;
+}
+.mark{
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    display: none;
+}
+.success_box{
+    width:600px;
+    padding: 20px;
+    border:2px solid #d7d7d7;
+    text-align: center;
+    background:#fff;
+    position: fixed;
+    top:50%;
+    left:50%;
+    margin-left:-300px;
+    z-index: 99;
+    display: none;
+}
+.success_box .success_icon{
+    background:url(../image/success.png) center no-repeat;
+    height:80px;
+}
+.success_box .success_content{
+    font-size:16px;
+}
+.error,.verify_error{
+    display: none;
+}

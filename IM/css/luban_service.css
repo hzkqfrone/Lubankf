@@ -1,0 +1,102 @@
+html, body, p, ul, li, img, h1, h2, h3, h4, pre {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+#luban_chat_btn{
+    box-sizing: border-box;
+    position: fixed;
+    position: fixed \9;
+    *position: fixed;
+    _position: absolute;
+    bottom:20px;
+    background:#424952;
+    color:#fff;
+    text-align:center;
+    border-radius:3px;
+    cursor: pointer;
+    font-size:14px;
+    z-index: 9999999999999;
+    transition: bottom top .5s;
+}
+#luban_chat_btn i{
+    display: inline-block;
+    vertical-align: middle;
+    margin-top:-2px;
+    width:20px;
+    height:20px;
+    background:url(https://cdn.lubankf.com/IM/images/btn_icon_1.png) no-repeat center;
+    background-size:100%;
+}
+#lub_chatpup{
+    width:320px;
+    height:500px;
+    background:#f7f7f7;
+    position: fixed;
+    bottom: 0px;
+    right:20px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.15);
+    z-index: 9999999999999;
+    display:none;
+}
+iframe{
+    border:none;
+}
+#lub_chatpup .dragBox{
+    position: absolute;
+    width:70%;
+    height:50px;
+    top:0;
+    cursor: move;
+}
+#lub_inviteWrap{
+    background:rgb(87, 163, 243);
+    position: absolute;
+    bottom:10px;
+    right:10px;
+    width:320px;
+    height:116px;
+    box-shadow: 0 0 14px 0 rgba(0,0,0,.16);
+    color: #fff;
+    border-radius: 3px;
+}    
+#lub_inviteWrap .inviteWrapIcon{
+    width:69px;
+    text-align: center;
+    float:left;
+    padding-top:25px;
+}
+#lub_inviteWrap .inviteWrapIcon>img{
+    width:45px;
+    height:45px;
+}
+#lub_inviteWrap .inviteRight{
+    width:250px;
+    float: left;
+    border-left: 1px solid #e7e7e7;
+}
+#lub_inviteWrap .btnBox{
+    text-align: center;
+    padding-bottom:10px;
+    
+}
+#lub_invite_title{
+    max-height: 40px;
+    overflow: hidden;
+    line-height:22px;
+    margin:18px 8px;
+    font-size:14px;
+}
+#lub_inviteWrap .btnBox>a{
+    display: inline-block;
+    width:68px;
+    height:28px;
+    border:1px solid #fff;
+    border-radius: 3px;
+    line-height: 28px;
+    text-align: center;
+    margin:0 10px;
+    color:#fff;
+    text-decoration:none;
+    font-size:14px;
+}

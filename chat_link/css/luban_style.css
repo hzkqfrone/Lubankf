@@ -1,0 +1,812 @@
+html, body, p, ul, li, img, h1, h2, h3, h4, pre {
+    margin: 0;
+    padding: 0;
+    border: 0
+}
+
+html, body, button, input, textarea, pre {
+    font-family: "Microsoft Yahei", Arial, sans-serif
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    overflow: hidden;
+}
+
+body {
+    background: #fff;
+    -webkit-text-size-adjust: none
+}
+
+h1, h2, h3, h4 {
+    font-weight: normal
+}
+
+ul {
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+    color:#333
+}
+
+img {
+    border: none
+}
+
+textarea {
+    overflow: auto
+}
+embed{
+    width:100%;
+}
+
+* {
+    scrollbar-face-color: #bbb;
+    scrollbar-arrow-color: #bbb;
+    scrollbar-3dlight-color: #c0c0c0;
+    scrollbar-highlight-color: #bbb;
+    scrollbar-shadow-color: #bbb;
+    scrollbar-darkshadow-color: #c0c0c0;
+    scrollbar-track-color: #eee;
+}
+
+pre{
+    border: 0;
+    background: 0;
+    white-space: pre-line;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-button {
+
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ddd;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: #f3f3f3;
+    -webkit-border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border: solid 1px #c0c0c0;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: #f3f3f3;
+}
+
+::-webkit-resizer {
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #bbb;
+}
+
+#lub_service_wrap{
+    font-size:14px;
+    width:100%;
+    height:100%;
+}
+#lub_service_wrap .lub_head{
+    line-height: 30px;
+    background:#57a3f3;
+    border-top-left-radius:3px;
+    border-top-right-radius: 3px;
+    color:#fff;
+}
+#lub_service_wrap .lub_head_wrap{
+    position: relative;
+    padding:10px;
+}
+#lub_service_wrap #logo{
+    width:30px;
+    height: 30px;
+    float: left;
+    border-radius:50%;
+    margin-right:10px;
+    display: none;
+}
+#lub_service_wrap .headLeft{
+    display: inline-block;
+}
+#lub_service_wrap h3.lub_title {
+    display: inline-block;
+}
+#lub_service_wrap .lub_func{
+    float:right;
+}
+#lub_service_wrap .lub_func a{
+    display: inline-block;
+    color:#fff;
+}
+#lub_service_wrap .lub_func a.minimize{
+    margin:0 5px;
+}
+#lub_service_wrap .lub_warp{
+    height:100%;
+    width: 100%;
+    overflow: hidden;
+    float: left;
+}
+#lub_service_wrap .lub_msg_content{
+    height: 100%;
+    position: relative;
+    z-index: 140;
+    overflow: hidden;
+}
+#lub_service_wrap .unusual{
+    position: relative;
+    width:100%;
+    height:100%;
+    overflow: hidden;
+    text-align: center;
+}
+#lub_service_wrap .unusual>img{
+    margin-top:60px;
+}
+#lub_service_wrap .lub_chat_content{
+    position: absolute;
+    height: auto;
+    top: 0;
+    bottom: 171px;
+    right: 0;
+    left: 0;
+    overflow-y: auto;
+    display: block;
+}
+#lub_service_wrap .lub_chat_wrap{
+    padding:12px;
+}
+#lub_service_wrap .lub_chat_wrap .systemWrap{
+    width:100%;
+    display: inline-block;
+    text-align: center;
+}
+#lub_service_wrap .systemWrap>a.hint{
+    color:#2d8cf0;
+    line-height: 30px;
+}
+#lub_service_wrap .lub_chat_wrap .system{
+    width:80%;
+    margin:0 auto;
+    text-align: center;
+    color:#999;
+    font-size: 12px;
+    padding:5px 0;
+}
+
+#lub_service_wrap .lub_chat_wrap ul{
+    display: inline-block;
+    width:100%;
+}
+#lub_service_wrap .lub_chat_list{
+    width:100%;
+    margin-bottom:15px;
+    float:left;
+}
+#lub_service_wrap .username{
+    color:#8D8D8D;
+    font-size:12px;
+    width:100%;
+}
+#lub_service_wrap .username .date{
+    margin-left:5px;
+}
+#lub_service_wrap .chat_msg{
+    padding:5px 10px;
+    background:#f7f7f7;
+    display: inline-block;
+    border-radius: 3px;
+    margin-top:5px;
+    max-width:85%;
+    position: relative;
+}
+#lub_service_wrap .chat_msg .chat_content{
+    line-height: 25px;
+    word-wrap:break-word;
+}
+#lub_service_wrap .chat_msg .chat_content a{
+    color: #2d8cf0;
+}
+#lub_service_wrap .chat_customer .chat_content>a{
+    color:#fff;
+}
+#lub_service_wrap .chat_service .chat_content>a:hover,
+#lub_service_wrap .chat_customer .chat_content>a:hover,
+#lub_service_wrap .chat_msg .common_questions a:hover
+{
+    text-decoration:underline;
+}
+#lub_service_wrap .chat_msg .chat_content img{
+    max-width:150px;
+    height:auto;
+    max-height:300px;
+}
+#lub_service_wrap .chat_msg .common_questions a{
+    color:#2d8cf0;
+}
+#lub_service_wrap .chat_msg .common_questions p.qs_tips{
+    color:#aaa;
+    line-height: 20px;
+}
+#lub_service_wrap .chat_msg .common_questions .other_questions{
+    padding-top:5px;
+    font-size:12px;
+}
+
+#lub_service_wrap .chat_msg .isSolve{
+    width:100%;
+    min-width:100px;
+    text-align: center;
+    border-top:1px solid #e7e7e7;
+    margin-top:5px;
+}
+#lub_service_wrap .chat_msg .solve{
+    position: relative;
+}
+#lub_service_wrap .chat_msg .solve a{
+    display: inline-block;
+    width:50%;
+    height:20px;
+    line-height: 20px;
+    text-align: center;
+    color:#2d8cf0;
+}
+#lub_service_wrap .chat_msg .solve .border{
+    position: absolute;
+    top:0;
+    left:50%;
+    color:#aaa;
+    margin-left:-4px;
+}
+#lub_service_wrap .chat_msg .isSolve .ratedIng,#lub_service_wrap .chat_msg .isSolve .isRated{
+    display: none;
+}
+#lub_service_wrap .chat_msg .isSolve span{
+    display: inline-block;
+    width:100%;
+    height:30px;
+    color:#aaa;
+    text-align: center;
+}
+#lub_service_wrap .emoji-face{
+    width:24px;
+    height:24px;
+    display: inline-block;
+    background:url(https://cdn.lubankf.com/IM/images/emoji.png);
+    vertical-align: bottom;
+}
+#lub_service_wrap .chat_customer .username{
+    text-align: right;
+}
+#lub_service_wrap .chat_customer .chat_msg{
+    float:right;
+    background:#57a3f3;
+    color:#fff;
+}
+#lub_service_wrap .angle{
+    position: absolute;
+    top: 14px;
+}
+#lub_service_wrap .chat_customer .angle{
+    right: -6px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 6px solid #57a3f3;
+}
+#lub_service_wrap .chat_service .angle{
+    left: -7px;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-right: 7px solid #f7f7f7;
+}
+#lub_service_wrap .lub_footer{
+    width:100%;
+    height:130px;
+    background:#fff;
+    position: absolute;
+    border-top:1px solid #e7e7e7;
+    bottom:51px;
+}
+#lub_service_wrap .toast{
+    width:100%;
+    height:30px;
+    text-align: center;
+    margin-top:-30px;
+    display: none;
+}
+#lub_service_wrap .toast>p{
+    display: inline-block;
+    width:80%;
+    margin:0 auto;
+    height:30px;
+    background: #f35764;
+    color:#fff;
+    line-height: 30px;
+    border-radius:3px;
+}
+#lub_service_wrap #lub_end_chat{
+    width:100%;
+    height:130px;
+    background:#efefef;
+    position: absolute;
+    border-top:1px solid #f7f7f7;
+    bottom:0;
+    text-align: center;
+}
+#lub_end_chat .lub_end_hint{
+    width:60px;
+    display: inline-block;
+    margin:25px;
+    cursor: pointer;
+}
+#lub_end_chat .lub_end_hint i{
+    font-size:50px;
+}
+#lub_service_wrap .lub_toolbar{
+    height:25px;
+}
+#lub_service_wrap .artificial{
+    float: right;
+    margin-right:10px;
+    display: none;
+}
+#lub_service_wrap .lub_toolbar i{
+    height:18px;
+    width:18px;
+    display: inline-block;
+    margin:3px 0 0 10px;
+    cursor: pointer;
+    float:left;
+    font-size:18px;
+    color:#707070;
+    position: relative;
+}
+
+#lub_service_wrap i.upload_image input,#lub_service_wrap i.upload_file input,
+#lub_service_wrap i.lub_open_photo input{
+    opacity:0 !important;
+    width:18px;
+    height:18px;
+    position: absolute;
+    left:0;
+    top:0;
+}
+#lub_service_wrap .lub_toolbar i.lub_open_photo{
+    display: none;
+}
+#lub_service_wrap .lub_chat_textarea{
+    margin:0 8px;
+}
+#lub_service_wrap #lub_textarea{
+    height:65px;
+    width:100%;
+    border:none;
+    resize: none;
+    outline:none;
+}
+#lub_service_wrap .lub_send_wrap .softwareSource{
+    font-size:12px;
+    color:#999;
+    margin-right:20px;
+    display: none;
+}
+#lub_service_wrap .lub_send_wrap{
+    width:100%;
+    text-align: right;
+}
+#lub_service_wrap .is_lub_send{
+    width:58px;
+    height:28px;
+    display: inline-block;
+    background:#999;
+    text-align: center;
+    line-height: 28px;
+    border-radius:3px;
+    color:#fff;
+    margin-right:5px;
+}
+#lub_service_wrap .lub_emoji{
+    display: none;
+    position: absolute;
+    bottom:131px;
+    left:0;
+    width:100%;
+    background:#fff;
+    border-top:1px solid #e7e7e7;
+    z-index:100;
+}
+#lub_service_wrap .allocation{
+    position: absolute;
+    bottom:131px;
+    left:0;
+    width:100%;
+    background:#fedcba;
+    color:#333;
+    z-index:99;
+    text-align: center;
+    display: none;
+    font-size:12px;
+}
+#lub_service_wrap .emoji_list li{
+    width:24px;
+    height:24px;
+    float: left;
+    display: inline-block;
+    background:url(https://cdn.lubankf.com/IM/images/emoji.png);
+    margin:5px 5px 5px 10px;
+    cursor: pointer;
+}
+#lub_service_wrap li .emojiMsg{
+    width:24px;
+    height:24px;
+    display: inline-block;
+    background:url(https://cdn.lubankf.com/IM/images/emoji.png);
+}
+#lub_davleft,#lub_davright{
+    width:169px;
+    height:100%;
+    float: left;
+    display: none;
+}
+@media screen and (max-width: 780px) {
+    #lub_davleft,#lub_davright {
+        display: none !important;
+    }
+    .lub_msg_content{
+        margin:0 !important;
+    }
+}
+@media screen and (max-width: 550px) {
+    .softwareSource{
+        display: none !important;
+    }
+}
+#lub_davleft{
+    margin-left: -100%;
+    border-right:1px solid #e7e7e7;
+}
+#lub_davright{
+    margin-left: -170px;
+    border-left:1px solid #e7e7e7;
+}
+#lub_davleft img,#lub_davright img{
+    width:100%;
+    height:100%;
+    margin-top: 0px;
+}
+
+.luban_dav_scrollX {
+    overflow: hidden;
+    width: 200px;
+    float: left;
+    margin-left: 20px;
+    font-size: 12px;
+    display: none;
+    margin-top: 3px;
+}
+
+.luban_dav_scrollX .advContent {
+    width: 8000%;
+    height: 30px;
+}
+
+.luban_dav_scrollX .advContent div {
+    float: left;
+}
+
+.luban_dav_scrollX .advContent ul {
+    float: left;
+    height: 30px;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.luban_dav_scrollX .advContent ul li {
+    float: left;
+    line-height: 30px;
+    list-style: none;
+}
+
+.luban_dav_scrollX li a {
+    margin-right: 10px;
+    color: #4d4d4d;
+}
+
+.luban_dav_scrollX li a:hover {
+    text-decoration: underline;
+    color: #901d22;
+}
+ /*Y轴滚动广告*/
+
+.scrollNews {
+    padding-top: 4px;
+    position: relative
+}
+
+
+.luban_dav_scrollY div {
+    position: absolute;
+}
+
+.luban_dav_scrollY a {
+    cursor: pointer;
+    font-size: 12px;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    float: left;
+    color: #4d4d4d;
+    width:100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: left;
+}
+
+.luban_dav_scrollY a:hover{
+    text-decoration: underline;
+    color: #901d22;
+}
+
+.luban_dav_scrollY li{
+    list-style: none;
+    line-height: 20px;
+    display: block;
+    height: 20px;
+}
+
+#newScrollY {
+    padding-right: 2px;
+    font-weight: normal;
+    overflow: hidden;
+    max-width: 202px;
+    line-height: 20px;
+    height: 20px;
+    float: left;
+    padding-left: 10px;
+    display: none;
+    margin-top:10px;
+}
+.float_dav {
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    padding: 10px 25px;
+    z-index: 10;
+    top: 10px;
+    margin: 0px 15px 0 10px;
+    display: none;
+    background:#fff;
+}
+.float_dav .iconfont {
+    width: 18px;
+    height: 16px;
+    display: block;
+    position: absolute;
+    background:#fff;
+}
+.float_dav .float_icon_left {
+    left: -1px;
+    top: -1px;
+}
+.float_dav .float_icon_right {
+    right: -1px;
+    bottom: -1px;
+}
+.float_dav_content {
+    overflow: hidden;
+    width: 100%;
+}
+.lub_chat_modal{
+    width:250px;
+    position: absolute;
+    top:25%;
+    left:0;
+    right:0;
+    margin:auto;
+    background:#fff;
+    z-index: 10;
+    border:1px solid #57a3f3;
+    border-radius: 3px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.15);
+}
+.lub_chat_modal>p{
+    padding:20px 0;
+    text-align: center;
+}
+.lub_chat_modal .lub_hint{
+    text-align: center;
+    padding-bottom:10px;
+}
+.lub_chat_modal .lub_hint a{
+    width:70px;
+    height:30px;
+    display: inline-block;
+    border-radius:3px;
+    border:1px solid #57a3f3;
+    line-height: 30px;
+    margin:0 10px;
+}
+.lub_chat_modal .lub_hint a.cancel_close{
+    color:#57a3f3;
+}
+.lub_chat_modal .lub_hint a.sure_close{
+    background:#57a3f3;
+    color:#fff;
+}
+.system_msg{
+    position: relative;
+    margin-bottom: 10px;
+    font-size: 12px;
+    text-align: center;
+    color:#999;
+    float:left;
+    width:100%;
+}
+.system_msg .good{
+    color:#19be6b;
+}
+.system_msg .middle{
+    color:#f90;
+}
+.system_msg .bad{
+    color:#ed4014;
+}
+.system_msg span.systemInfo{
+    display: inline-block;
+    padding:2px 3px;
+    border-radius:3px;
+    background-color: #f5f5f5;
+}
+#more_chat_log{
+    color: #57a3f3;
+    text-decoration: underline;
+}
+#lub_service_wrap .leave_content{
+    padding:20px;
+}
+#lub_service_wrap .leave_content .contact{
+    padding-top:20px;
+}
+#lub_service_wrap .leave_content .contact span{
+    display: inline-block;
+    width:80px
+}
+#lub_service_wrap .leave_content .contact input{
+    box-sizing: border-box;
+    width:100%;
+    padding:5px 6px;
+    border-radius:3px;
+    border:1px solid #d8d9da;
+}
+#leave_textarea{
+    resize: none;
+    box-sizing: border-box;
+    width:100%;
+    height:80px;
+    border-radius:3px;
+    padding:5px;
+    border-color:#d8d9da;
+}
+.lub_save_btn{
+    margin:20px auto 0;
+    display: block;
+    height:36px;
+    text-align: center;
+    line-height: 36px;
+    background:#57a3f3;
+    color:#fff;
+    border-radius: 3px;
+}
+.leave_content .error,.leave_content .success{
+    width:80%;
+    margin:10px auto 0;
+    display: block;
+    height:36px;
+    text-align: center;
+    line-height: 36px;
+    color:#fff;
+    border-radius: 3px;
+}
+.leave_content .error{
+    background:#f35764;
+}
+.leave_content .success{
+    background:#19be6b;
+}
+.lub_shade{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.5);
+    z-index: 190;
+}
+#lub_preview{
+    width:250px;
+    position: absolute;
+    top:25%;
+    left:0;
+    right:0;
+    margin:auto;
+    padding:20px;
+    background:#fff;
+    z-index: 191;
+    border:1px solid #57a3f3;
+    border-radius: 3px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.15);
+}
+#lub_preview_close{
+    position: absolute;
+    right:10px;
+    top:10px;
+}
+#lub_preview .title{
+    text-align: center;
+    white-space:wrap;
+    font-size:12px;
+    padding-bottom: 10px;
+}
+#lub_preview .iconWrap{
+    padding:10px 0;
+    display: flex;
+    justify-content: space-around;
+}
+#lub_preview .iconWrap li{
+    width:60px;
+    height:60px;
+    text-align: center;
+    cursor: pointer;
+    border:1px solid #fff;
+    padding:5px;
+    border-radius: 3px;
+}
+#lub_preview .iconWrap li>img{
+    width:40px;
+    height:40px;
+    display:block;
+    padding:0 10px;
+}
+#lub_preview textarea{
+    resize: none;
+    box-sizing: border-box;
+    width:100%;
+    height:80px;
+    border-radius:3px;
+    padding:5px;
+    border-color:#d8d9da;
+}
+#lub_preview .iconWrap .icon{
+    width:40px;
+    height:40px;
+    display: block;
+    padding:0 10px 3px;
+}
+.sensitive_word{
+    display: inline-block;
+    text-align: right;
+    width:100%;
+    color:#f43e0b;
+    font-size:12px;
+    display: none;
+}

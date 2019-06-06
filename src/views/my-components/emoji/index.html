@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/vue/2.2.6/vue.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.1/css/bulma.css">
+</head>
+<body>
+    <div id="root" class="container">
+        <comment v-model="comment"></comment>
+    </div>
+
+    <script>
+        Vue.component('comment',{
+            props:['value'],
+            template:`
+                <textarea class="textarea" :value="value" @input="filterComment($event.target.value)"></textarea>
+            `,
+            data(){
+                return {
+                    sensitiveList:['包子','蛤蛤'],
+                    replaceWord:'河蟹'
+                }
+            },
+            methods: {
+                filterComment(comment){
+                    var that = this;
+                    this.sensitiveList.forEach(function(word){
+                        var regex = new RegExp(word,'g');;
+                        comment = (comment.indexOf(word) >= 0 ? comment.replace(regex,that.replaceWord) : comment);
+                    })
+                    this.$emit('input',comment)
+                }
+            }
+        });
+    
+        var vm = new Vue({
+            el:"#root",
+            data:{
+                comment:'这是一条评论'
+            }
+        });
+    </script>
+    
+</body>

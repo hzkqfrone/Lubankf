@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>网站接入预览</title>
+    <style>
+        *{padding:0;margin:0;font-size:14px;}
+        body,html{width:100%;height:100%;}
+        header{width:100%;height:70px;box-shadow: 0 0 4px 0 rgba(15, 66, 76, .25);overflow: hidden;}
+        .search{width:65%;height:40px;border:1px solid #e7e7e7;margin:0 auto;position: relative;margin-top:15px;}
+        .search .https{margin-left: 10px;width: 50px;display: inline-block;line-height: 40px;}
+        .search #previewInput{width: calc(100% - 80px);height: 14px;line-height: 14px;display: inline-block;font-size: 14px;padding: 12px 0; border: none; outline: none;margin-left:5px;}
+        #previewBtn{width: 80px;height: 42px;background: #2d8cf0;border: none;float: right;color: #fff;font-size: 15px; position: absolute; right: -81px;margin-top: -1px;}
+        .preview{width:100%;height:100%;}
+        #previewIframe{border:none;}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="search">
+            <span class="https">https://</span><input id="previewInput" type="text" placeholder="输入网站地址"/><button id="previewBtn">预览</button>
+        </div>
+    </header>
+    <div class="preview">
+        <iframe id="previewIframe" src="" width="100%" height="100%"></iframe>
+    </div>
+    <script>
+        
+        (function(){
+            var location = 'https://';
+            var previewIframe = document.getElementById('previewIframe');
+            var addressInput = document.getElementById('previewInput');
+            var previewBtn = document.getElementById('previewBtn');
+            var href = window.location.href;
+            var accessId = "";
+            previewBtn.addEventListener('click', function() {
+                previewIframe.src = location + addressInput.value;
+            });
+            window.onload = function(){
+                if(href.indexOf("accessId")>-1){
+                    accessId = href.split('accessId=')[1];
+                }
+                lbService.loadInitJs('https://cdn.lubankf.com/IM/js/lb_service.js?accessId='+accessId);
+            };
+            var lbService = {
+                loadInitJs: function(src) {
+                    var el = document.createElement("script");
+                    el.setAttribute("charset", "UTF-8");
+                    el.src = src;
+                    var s = document.getElementsByTagName("script")[0];
+                    s.parentNode.insertBefore(el, s)
+                }
+
+            }
+        }());
+
+    </script>
+</body>
+</html>

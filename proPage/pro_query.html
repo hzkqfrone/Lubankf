@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>快洽客服</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/query.css">
+</head>
+<body>
+    <header>
+        <img src="./image/logo_query.png">
+    </header>
+    <div class="query">
+        <div class="content">
+            <div class="from">
+                <div class="from_item form_item_email">
+                    <span>您的邮箱:</span>
+                    <input type="text" class="email">
+                    <i>*</i>
+                </div>
+                <div class="from_item form_item_pw">
+                    <span>查询密码:</span>
+                    <input type="text" class="password">
+                    <i>*</i>
+                </div>
+                <div class="query_btn">查询</div>
+            </div>
+        </div>
+    </div>
+    <div class="submit_loading">
+        <div class="loading"></div>
+    </div>
+    <div class="table">
+        <p class="title">佣金查询结果</p>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>您推荐的联系人</th>
+                    <th>电话</th>
+                    <th class="content">关系与需求</th>
+                    <th>跟进状态</th>
+                    <th>支付状态</th>
+                    <th>佣金</th>
+                    <th class="content">备注</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                
+            </tbody>
+            <tfoot>
+                <tr><td colspan="7"><i>*</i>注：推荐并购买成功后，我们的工作人员将会主动联系您支付佣金</td></tr> 
+            </tfoot>
+        </table>
+    </div>
+    
+    <script src="./js/jquery.1.8.3.js"></script>
+    <script src="./js/proquery.js"></script>
+</body>
+</html>

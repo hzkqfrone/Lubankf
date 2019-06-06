@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link data-n-head="true" rel="icon" type="image/x-icon" href="./images/logo.ico">
+    <title>鲁班客服</title>
+    <!-- <link rel="stylesheet" href="./css/luban_style.css">
+    <link rel="stylesheet" href="./font/iconfont.css"> -->
+    <link rel="stylesheet" href="https://cdn.lubankf.com/chat_link/css/luban_style.css">
+    <link rel="stylesheet" href="https://cdn.lubankf.com/chat_link/font/iconfont.css">
+</head>
+<body>
+    <div id="lub_service_wrap">
+        <div class="lub_head">
+            <div class="lub_head_wrap">
+                <div class="headLeft">
+                    <img id="logo" src=""/>
+                    <h3 class="lub_title">鲁班客服</h3>
+                </div>
+                <div class="lub_func">
+                    <a href="javascript:;" id="lub_voice" class="voice iconfont">&#xe601;</a>
+                </div>
+            </div>
+        </div>
+        <div class="lub_warp">
+            <div class="lub_msg_content">
+                <div class="float_dav">
+                    <span class="iconfont float_icon_left">&#xe60d;</span>
+                    <span class="iconfont float_icon_right">&#xe621;</span>
+                    <div class="float_dav_content"></div>
+                </div>
+                <div class="lub_chat_content">
+                    <div class="lub_chat_wrap">
+                        <ul class="chat_log">
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="lub_footer">
+                    <div class="toast">
+                        <p></p>
+                    </div>
+                    <div id="lub_textarea_wrap">
+                        <div class="lub_toolbar clearfix">
+                            <i class="emoji iconfont" title="表情">&#xe635;</i>
+                            <i class="upload_image iconfont" title="发送图片">&#xe61d;<input type="file" name="file" accept="image/jpg,image/png,image/jpeg,image/gif" id="lub_Upload"></i>
+                            <i class="upload_file iconfont" title="发送文件">&#xe60c;<input type="file" name="file" id="lub_Upload_file"></i>
+                            <i class="lub_open_photo iconfont" title="相机">&#xe638;<input type="file" accept="image/*" capture="camera" id="lub_open_photo"></i>
+                            <a href="javascript:;" class="artificial">转人工</a>
+                        </div>
+                        <div class="lub_chat_textarea">
+                            <textarea id="lub_textarea" placeholder="请输入"></textarea>
+                        </div>
+                        <div class="lub_send_wrap">
+                            <div class="luban_dav_scrollX" id="lub_ScrollX">
+                                <div class="advContent">
+                                    <div id="oldScrollX">
+                                        <ul>
+                                        </ul>
+                                    </div>
+                                    <div id="newScrollX"></div>
+                                </div>
+                            </div>
+                            <div class="luban_dav_scrollY" id="newScrollY"></div>
+                            <a class="softwareSource" href="https://www.lubankf.com/" target="_blank">鲁班客服提供技术支持</a>
+                            <a href="javascript:;" class="is_lub_send">发送</a>
+                        </div>
+                        <div class="lub_emoji">
+                            <ul class="emoji_list clearfix"></ul>
+                        </div>
+                        <div class="allocation">正在为您分配客服...</div>
+                    </div>
+                    <div id="lub_end_chat" style="display: none;">
+                        <div class="lub_end_hint continue_onsulting">
+                            <i class="iconfont">&#xe622;</i>
+                            <span>继续咨询</span>
+                        </div>
+                        <div class="lub_end_hint" id="lub_close">
+                            <i class="iconfont">&#xe617;</i>
+                            <span>关闭</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lub_davLft" id="lub_davleft">
+            <a href="javscript:;">
+                <img src="">
+            </a>
+        </div>
+        <div class="lub_davRight" id="lub_davright">
+            <a href="javscript:;">
+                <img src="">
+            </a>
+        </div>
+        <div class="leave_msg lub_warp" style="display:none;">
+            <div class="leave_content">
+                <p>请留言，我们将尽快联系您!</p>
+                <textarea id="leave_textarea" placeholder="留言内容"></textarea>
+                <div class="contact">
+                    <input type="text" class="user" placeholder="姓名">
+                </div>
+                <div class="contact">
+                    <input type="text" class="tel" placeholder="联系电话">
+                </div>
+                <div class="contact">
+                    <input type="text" class="email" placeholder="邮箱">
+                </div>
+                <a href="javascript:;" id="leave_btn" class="lub_save_btn">留言</a>
+                <span class="error" style="display:none;"></span>
+                <span class="success" style="display:none;"></span>
+            </div>
+        </div>
+        <div class="lub_chat_close lub_chat_modal" style="display:none;">
+            <p>结束本次对话?</p>
+            <div class="lub_hint">
+                <a href="javascript:;" class="sure_close">结束</a>
+                <a href="javascript:;" class="cancel_close">取消</a>
+            </div>
+        </div>
+        <div class="lub_chat_error lub_chat_modal" style="display:none;">
+            <p>请求失败，请稍后重试</p>
+            <div class="lub_hint">
+                <a href="javascript:;" class="sure_close">确定</a>
+            </div>
+        </div>
+        <!-- 服务评价 -->
+        <div class="lub_shade" style="display:none;"></div>
+        <div id="lub_preview" style="display: none;">
+            <a href="javascript:;" id="lub_preview_close" class="iconfont">&#xe603;</a>
+            <div class="title">请对我的服务做出评价</div>
+            <ul class="iconWrap">
+                <li data-leve="0">
+                    <img src='https://cdn.lubankf.com/chat_link/images/good.png'>
+                    <span>好评</span>
+                </li>
+                <li data-leve="1">
+                    <img src='https://cdn.lubankf.com/chat_link/images/middle.png'>
+                    <span>中评</span>
+                </li>
+                <li data-leve="2">
+                    <img src='https://cdn.lubankf.com/chat_link/images/bad.png'>
+                    <span>差评</span>
+                </li>
+            </ul>
+            <textarea placeholder="请填写评价内容（选填）" id="evaluationContent"></textarea>
+            <a href="javascript:;" id="evaluation_btn" class="lub_save_btn">提交</a>
+        </div>
+        <audio src="https://cdn.lubankf.com/chat_link/css/audio.mp3" style="display: none;" id="warning-tone"></audio>
+    </div>
+    <script src="https://cdn.lubankf.com/chat_link/js/jquery.1.8.3.js"></script>
+    <script src="https://cdn.lubankf.com/chat_link/js/json2.js"></script>
+    <!-- <script src="../js/luban_init.js"></script>
+    <script src="../js/luban_chat.js"></script> -->
+    <script src="https://cdn.lubankf.com/chat_link/js/luban_init.js"></script>
+    <script src="https://cdn.lubankf.com/chat_link/js/luban_chat.js"></script>
+</body>
+</html>

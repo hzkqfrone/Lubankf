@@ -1,0 +1,282 @@
+.tickets{
+    height: 100%;
+}
+.ticketsWrap{
+    height:100%;
+    .group{
+        width:220px;
+        height:100%;
+        overflow-y:auto;
+        float:left;
+        .addGroupBtn{
+            color:#12b7f5;
+            padding:10px;
+            cursor: pointer;
+        }
+        .addgroup{
+            i{  
+                font-size:18px;
+                cursor: pointer;
+                &.checkmark:hover{
+                    color:#19be6b;
+                }
+                &.close:hover{
+                    color:red;
+                }
+            }
+        }
+        .groupTitle{
+            .noGroup{
+                text-align: center;
+                line-height: 50px;
+            }
+            li{
+                height:45px;
+                line-height: 45px;
+                padding-left:5px;
+                cursor: pointer;
+                .operation{
+                    display: none;
+                }
+                &:hover{
+                    background:#61c4f5;
+                    color:#fff;
+                }
+                &.selectItem{
+                    background:#1ba8ed;
+                    color:#fff;
+                    &:hover{
+                        background:#1ba8ed;
+                    }
+                }
+                .title{
+                    text-overflow:ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    display:inline-block;
+                    float:left;
+                    width:190px;
+                }
+                .edit:hover{
+                    color:#19be6b;
+                }
+                .del:hover{
+                    color:red;
+                }
+                &:hover .title{
+                    width:calc(100% - 20px);
+                }
+                &:hover .operation{
+                    display: inline-block;
+                }
+            }
+        }
+    }
+    .listRight{
+        margin-left:220px;
+        padding-left:20px;
+        border-left:1px solid #e7e7e7;
+    }
+}
+.ticketsDrawer{
+    .ivu-drawer-body{
+        padding:0;
+    }
+    .drawerLeft{
+        width:930px;
+        height:100%;
+        overflow: hidden;
+        float:left;
+        position: relative;
+        span.title{
+            max-width:400px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            display: inline-block;
+        }
+    }
+    .tagWrap{
+        float: right;
+    }
+    .head{
+        padding:16px 0 0 16px;
+        height:31px;
+        line-height: 31px;
+        border-bottom:1px solid #e7e7e7;
+        padding-bottom:40px;
+        .head_left{
+            float: left;
+            margin-top:-2px;
+            h3{
+                .ivu-tag{
+                    margin-right:5px;
+                    float: left;
+                }
+                display: inline-block;
+                margin-right:20px;
+                float: left;
+            }
+            float: left;
+        }
+        .func{
+            float:right;
+            margin-right: 50px;
+            margin-top: -6px;
+            a{
+                margin-left:20px;
+            }
+            i{
+                font-size:16px;
+            }
+        }
+    }
+    .msgContent{
+        width:100%;
+        margin:0;
+        ul{
+            margin:0 30px;
+            li{
+                display: inline-block;
+                width:100%;
+                margin-top:10px;
+                .msgText{
+                    //语音
+                    .voice .voiceWrap{
+                        cursor: pointer;
+                        img{
+                            width:15px;
+                            height:15px;
+                            vertical-align: middle;
+                            margin-top:-3px;
+                        }
+                    }
+                }
+                a:hover{
+                    text-decoration:underline;
+                }
+                .message{
+                    float:left;
+                    .title{
+                        font-size:12px;
+                        .serviceName{
+                            margin-right:10px;
+                        }
+                        .date{
+                            color:#b2b2b2;
+                        }
+                        img{
+                            width:20px;
+                            height:20px;
+                            border-radius:20px;
+                            background:#f5f5f5;
+                            margin:-2px 8px 0 0;
+                            float:left;
+                        }
+                    }
+                    .msgText{
+                        text-overflow:ellipsis;
+                        word-break: break-all;
+                        padding:2px 0;
+                        line-height: 24px;
+                        margin-left:28px;
+                    }
+                }
+            }
+            .ticketsList{
+                margin-bottom:10px;
+                .title{
+                    i{  
+                        padding:4px;
+                        color:#fff;
+                        border-radius: 20px;
+                        background:#6fd048;
+                        margin-top:-3px;
+                        margin-right:5px;
+                    }
+                    i.redeploy{
+                        background:#fb894f;
+                    }
+                    i.checkmark{
+                        background: #19be6b;
+                    }
+                    span{
+                        color:#999;
+                        margin-left:5px;
+                    }
+                }
+                .content{
+                    padding:10px 10px 10px 0;
+                    margin-left:25px;
+                }
+            }
+            .create{
+                padding-bottom: 10px;
+                border-bottom:1px solid #e7e7e7;
+            }
+        }
+    }
+    .textareaBox{
+        position: relative;
+        position: absolute;
+        bottom:0;
+        left:0;
+        width:100%;
+        height:160px;
+        background:#fff;
+        border-top:1px solid #e7e7e7;
+        .func{
+            position: relative;
+            padding:10px 0 0 30px;
+            .ivu-poptip-body-content{
+                overflow: inherit;
+            }
+            a{
+                width:18px;
+                height:18px;
+                display: inline-block;
+            }
+            .funcHint{
+                margin-right:10px;
+            }
+            a.file{
+                background:url(../../images/file.png) no-repeat center;
+                input{
+                    width:18px;
+                    opacity: 0;
+                    cursor: pointer;
+                }
+            }
+        }
+        .textarea{
+            padding:0 20px 0;
+            width:100%;
+            height:85px;
+            line-height: 20px;
+            overflow-y: auto;
+            outline: none;
+            border:none;
+            resize:none; 
+        }
+        .sendBtn{
+            display:inline-block;
+            float: right;
+            margin-right:30px;
+        }
+    }
+}
+
+.ivu-scroll-container{
+    &::-webkit-scrollbar {/*滚动条整体样式*/
+        width: 3px;    
+        height: 1px;
+    }
+    &::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+        background: #e0e0e0;
+    }
+}
+
+
+
