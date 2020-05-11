@@ -23,7 +23,7 @@
     "echarts": "^4.2.0-rc.2",
     "iview": "^3.1.0",
     "js-cookie": "^2.2.0",
-    "tinymce": "^4.7.4",
+    "tinymce": "^4.9.10",
     "vue": "^2.5.13",
     "vue-router": "^3.0.1",
     "vue2-editor": "^2.4.3",
